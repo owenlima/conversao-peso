@@ -16,8 +16,8 @@ jobs:
       - name: Docker Build and Push
         uses: docker/build-push-action@v2.7.0
         with:
-          context: ./src
-          file: ./src/Dockerfile
+          context: ./ConversaoPeso.Web
+          file: ./ConversaoPeso.Web/Dockerfile
           push: true
           tags: |
             owenlima/conversao-peso:v1
